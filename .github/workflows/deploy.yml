@@ -11,7 +11,7 @@ jobs:
           yarn
       - name: Generate site
         run: |
-          yarn generate
+          yarn build
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
