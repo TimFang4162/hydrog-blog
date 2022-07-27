@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Timmy自留地
-subtitle: 'Fighting for Love.'
+title: Timmyの自留地
+subtitle: 'Fighting for Love'
 description: ''
 keywords:
-author: Timmy(TimFnag4162)
+author: Timmy(TimFang4162)
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
@@ -44,17 +44,17 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: true
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace: '    '
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: oasis
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

@@ -1,0 +1,19 @@
+# html lang
+language: zh-CN
+
+# main menu navigation
+menu:
+  Home: /
+  About: /2022/07/27/about/
+  # Archives: /archives
+
+# stylesheets loaded in the <head>
+stylesheets:
+  - /css/oasis.css
+
+# scripts loaded in the end of the body
+scripts:
+  - /js/oasis.js
+
+logo:
+  - ./favicon.jpg
