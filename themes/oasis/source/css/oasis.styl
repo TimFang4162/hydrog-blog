@@ -1,6 +1,6 @@
-fonts = Inter var,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji
+fonts = PingFang SC,-apple-system, BlinkMacSystemFont,HarmonyOS_Medium,Helvetica Neue,,Microsoft YaHei,sans-serif,Roboto, "Helvetica Neue", Arial, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-color-accent = #394867
+color-accent = #6976E7
 color-primary = #1a202c
 
 body
@@ -21,8 +21,42 @@ div#content
   width 40em
   max-width 90%
 
-h1#title
-  margin-bottom 0
+h1:after,h2:after,h3:after,h4:after,h5:after,h6:after
+    width: 40px
+    height: 11px
+    content: ""
+    display: block
+    background: color-accent
+    opacity: 0.25
+    pointer-events: none
+    border-radius: 15px
+    margin-left: -5px
+    bottom: 0px
+h1,h2,h3,h4,h5,h6
+    font-weight: bold
+h1
+    font-size: 30px
+    line-height: 22px
+h2
+    font-size: 26px
+    line-height: 20px
+h3
+    font-size: 22px
+    line-height: 17px
+h4
+    font-size: 18px
+    line-height: 12.5px
+h5
+    font-size: 15px
+    line-height: 10px
+h6
+    font-size: 13px
+    line-height: 9px
+
+a
+    color color-accent
+    text-decoration underline
+    font-weight: bold;
 
 div#menu-outer
   margin-top 0.5em
@@ -38,6 +72,7 @@ nav#menu-inner
   a
     color color-accent
     text-decoration underline
+    font-weight: bold;
 
 div#content-outer
   margin-top 2em
@@ -45,7 +80,6 @@ div#content-outer
     div#paginator
       margin-top 4em
       a
-        color color-accent
         margin-right 1em
       span
         color color-accent
@@ -59,7 +93,6 @@ div.post-item
     a
       color #19202b
       font-size: 1.2em
-      font-weight: 500
       text-decoration: none
       
 time
@@ -74,14 +107,7 @@ div#bottom-inner
     height 1px
     border none
   div
-    display flex
     height 2em
-    justify-content space-between
-    align-items center
-    a
-      color #19202b
-    #hexo
-      float right
     img
         width 1em
         height 1em
@@ -92,8 +118,6 @@ img
   max-width 100%
 
 aside
-  a
-    color color-accent
   li
     margin-top 0.5em
     margin-bottom 0.5em

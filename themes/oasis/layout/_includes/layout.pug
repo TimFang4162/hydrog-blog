@@ -15,6 +15,7 @@ doctype html
 html(lang=config.language)
   head
     meta(charset='UTF-8')
+    meta(name="viewport" content="width=decive-width,initial-scale=1.0")
     title= pageTitle
     if theme.stylesheets !== undefined && theme.stylesheets.length > 0
       //- stylesheets list from _config.yml
@@ -47,11 +48,11 @@ html(lang=config.language)
           hr
           div
             div
-              a #{new Date().getFullYear()}@ #{config.author}
-            #hexo
-              a Powered by&nbsp
+              span ©#{new Date().getFullYear()} #{config.author}
+            div
+              span Powered by&nbsp
               a(href="https://hexo.io") Hexo
-              a &nbsp&&nbsp
+              span &nbsp&&nbsp
               a(href="https://github.com/qiantao94/hexo-theme-oasis") Oasis
   if theme.scripts !== undefined && theme.scripts.length > 0
     //- scripts list from config.yml
